@@ -1,0 +1,1 @@
+document.querySelector('.c2gzEf a').click();

@@ -1,0 +1,64 @@
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 25%;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    z-index: 1000;
+    padding: 1%;
+}
+
+.menu-header {
+    text-align: center;
+}
+.menu-count {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.menu-number {
+    margin-bottom: 5%;
+}
+.menu-number input {
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;    
+}
+
+.menu-input {
+    margin: 1% 5%;
+}
+
+.menu-ques {
+    display: flex;
+    margin-bottom: 10px;
+}
+.menu-ques-muiltiple:not(:last-child) {
+    display: flex;
+    margin-bottom: 10px;
+} 
+
+.menu-ques-input input {
+    width: 40px;
+    margin: 0 5px;
+}
+
+.menu-submit {
+    text-align: center;
+}
+.menu-submit button {
+    background-color: #b6cc04;
+    border-radius: 4px;
+    width: 75px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+}
+.menu-submit button:hover {
+    background-color: #a1b201;
+}

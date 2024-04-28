@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "AutoReport",
+  "description": "Auto Report",
+  "version": "1.0.0",
+  
+
+  "icons": {
+
+  },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "cookies",
+    "storage",
+    "contextMenus",
+    "declarativeContent",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+    {      
+      "matches": ["https://docs.google.com/forms/*"],
+      "js": ["script/menu.js","script/savingMenu.js", "script/content.js"],
+      "css": ["style.css"]
+    },
+    {
+      "matches": ["https://docs.google.com/forms/u/*"],
+      "js": ["script/return.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
